@@ -1,0 +1,10 @@
+import math
+def abd(a,b,c):
+	if b*b-4*a*c<0:
+		print("error")
+	else:
+		return (-b+math.sqrt(b*b-4*a*c))/(2*a),(b+math.sqrt(b*b-4*a*c))/(2*a)
+a=int(input("1"))
+b=int(input("1"))
+c=int(input("1"))
+print(abd(a,b,c))
