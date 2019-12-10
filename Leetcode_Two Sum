@@ -1,0 +1,19 @@
+class Solution:
+    def twoSum():
+        """
+        :type nums: List[int]
+        :type target: int
+        :rtype: List[int]
+        """
+        nums = [int(n) for n in input().split()]
+        target=int(input("请输入和数字"))
+        lens=len(nums)
+        for i in range(lens):
+            another_num = target - nums[i]
+            if another_num < 0:#判断大小，决定是否执行
+                break
+            else:
+                for j in range(i+1,lens):
+                    if nums[j] == another_num:
+                        print(nums[i],nums[j])
+    twoSum()
